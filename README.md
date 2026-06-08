@@ -34,7 +34,7 @@ streamlit run app.py
 - Default urutan label di `app.py` adalah:
 
 ```python
-CLASS_NAMES = ["Abnormal", "Non-Sperm", "Normal"]
+CLASS_NAMES = ["Normal_Sperm", "Abnormal_Sperm", "Non_Sperm"]
 ```
 
-Jika notebook training Kaggle memiliki `class_to_idx` berbeda, ubah `CLASS_NAMES` agar sesuai.
+Urutan label ini mengikuti target_names evaluasi: 0 = Normal_Sperm, 1 = Abnormal_Sperm, 2 = Non_Sperm.

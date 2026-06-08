@@ -16,10 +16,9 @@ APP_TITLE = "Sperm Detector"
 MODEL_PATH = Path(__file__).parent / "best_model.pkl"
 IMAGE_SIZE = 224
 
-# Urutan label paling umum bila training memakai torchvision.datasets.ImageFolder
-# dengan folder: abnormal, non-sperm, normal. Jika pada notebook Kaggle urutannya
-# berbeda, ubah bagian ini sesuai class_to_idx notebook.
-CLASS_NAMES = ["Abnormal", "Non-Sperm", "Normal"]
+# Urutan label sesuai target_names evaluasi notebook:
+# 0 = Normal_Sperm, 1 = Abnormal_Sperm, 2 = Non_Sperm
+CLASS_NAMES = ["Normal_Sperm", "Abnormal_Sperm", "Non_Sperm"]
 
 
 # =========================================================
